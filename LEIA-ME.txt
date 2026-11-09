@@ -1,0 +1,21 @@
+BARBEARIA VIP STYLE - SITE PRONTO (sem terminal)
+
+COMO ABRIR
+1. Extraia o ZIP (botão direito > Extrair tudo).
+2. No VS Code: Arquivo > Abrir Pasta e escolha a pasta extraída (onde está o index.html).
+3. Com a extensão "Live Server" (Ritwick Dey) instalada: botão direito em index.html > Open with Live Server.
+
+O QUE TROCAR ANTES DE ENTREGAR AO CLIENTE
+- js/config.js : número do WhatsApp (obrigatório para o agendamento funcionar), endereço, telefone,
+                 Instagram, barbeiros, horário de funcionamento e mapa do Google.
+- js/data.js   : tabela de preços (valores de exemplo), cortes da galeria e textos.
+
+FOTOS REAIS NA GALERIA
+1. Crie uma pasta "img" ao lado do index.html e coloque as fotos dos cortes.
+2. Em js/data.js, no corte desejado, adicione:  img: 'img/nome-da-foto.jpg'
+   Se o corte não tiver img, aparece a ilustração.
+
+COMO FUNCIONA O AGENDAMENTO
+O cliente escolhe serviço, barbeiro, dia e horário. O botão abre o WhatsApp da barbearia com a
+mensagem pronta. Os horários vêm do funcionamento em config.js e NÃO consultam uma agenda real:
+a confirmação é feita pela barbearia na conversa.

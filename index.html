@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia Vip Style | Corte, barba e agendamento pelo WhatsApp</title>
+  <meta name="description" content="Corte de respeito e barba no ponto. Veja os preços, os cortes e agende seu horário direto pelo WhatsApp.">
+  <meta name="theme-color" content="#0F1A33">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F1A33'/%3E%3Cpath d='M18 8h28v48H18z' fill='%23fff'/%3E%3Cpath d='M18 14l28 14v10L18 24zM18 34l28 14v8L18 42z' fill='%23D1392E'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__in">
+      <a href="#inicio" class="logo" aria-label="Vip Style, início"><span class="logo__pole"></span><span class="logo__txt">Vip Style<small>Barbearia</small></span></a>
+      <nav id="nav" class="nav" aria-label="Principal">
+        <a href="#servicos">Preços</a><a href="#galeria">Cortes</a><a href="#agendar">Agendar</a><a href="#contato">Contato</a>
+        <a data-wa class="btn btn--red nav__cta" href="#agendar"><span data-icon="whatsapp" data-size="18"></span>Chamar no WhatsApp</a>
+      </nav>
+      <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"></button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="status" data-status><i></i><span>Verificando horário…</span></p>
+          <h1><span>Corte de respeito.</span><span class="outline">Barba no ponto.</span></h1>
+          <p class="hero__lead">Escolha o serviço, o dia e o horário e confirme tudo pelo WhatsApp, em menos de um minuto.</p>
+          <div class="hero__actions">
+            <a href="#agendar" class="btn btn--red">Agendar meu horário</a>
+            <a href="#servicos" class="btn btn--line">Ver tabela de preços</a>
+          </div>
+        </div>
+        <div class="hero__pole" aria-hidden="true">
+          <div class="pole"><i class="pole__cap pole__cap--top"></i><div class="pole__tube"><div class="pole__stripes"></div></div><i class="pole__cap pole__cap--bottom"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section section--ice">
+      <div class="container">
+        <div class="head"><h2>Tabela de preços</h2><p>Toque em um serviço para já levar a escolha para o agendamento.</p></div>
+        <div id="menu-board" class="board"></div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section">
+      <div class="container">
+        <div class="head"><h2>Cortes que estão em alta</h2><p>Inspire-se, escolha o seu e leve a referência para a cadeira.</p></div>
+        <div id="gallery" class="gallery"></div>
+        <p class="note">Ilustrações de exemplo. Substitua pelas fotos reais dos trabalhos da barbearia (veja o LEIA-ME).</p>
+      </div>
+    </section>
+
+    <section id="agendar" class="section section--navy">
+      <div class="container book">
+        <div class="book__intro">
+          <h2>Agende em 4 toques</h2>
+          <p>Monte o seu horário e o site abre o WhatsApp da barbearia com a mensagem pronta. É só enviar.</p>
+          <ul id="perks" class="perks"></ul>
+        </div>
+        <form id="book-form" class="card reveal" novalidate>
+          <label class="f"><span>Serviço</span><select id="f-service"></select></label>
+          <fieldset class="f"><legend>Barbeiro</legend><div id="f-barbers" class="chips"></div></fieldset>
+          <fieldset class="f"><legend>Dia</legend><div id="f-days" class="chips"></div></fieldset>
+          <fieldset class="f"><legend>Horário</legend><div id="f-times" class="chips"></div></fieldset>
+          <label class="f"><span>Seu nome</span><input id="f-name" type="text" autocomplete="name"></label>
+          <p id="summary" class="summary" aria-live="polite"></p>
+          <p id="book-err" class="err" role="alert"></p>
+          <button id="book-btn" class="btn btn--red btn--block" type="submit" disabled><span data-icon="whatsapp" data-size="20"></span>Enviar pelo WhatsApp</button>
+          <p class="hint">O horário só fica garantido depois da confirmação da barbearia.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contato" class="section section--ice">
+      <div class="container contact">
+        <div class="reveal">
+          <h2>Venha nos visitar</h2>
+          <p class="status status--dark" data-status><i></i><span></span></p>
+          <ul class="info">
+            <li><span data-icon="pin" data-size="22"></span><div><strong>Endereço</strong><span data-site="address"></span></div></li>
+            <li><span data-icon="phone" data-size="22"></span><div><strong>Telefone</strong><span data-site="phone"></span></div></li>
+            <li><span data-icon="whatsapp" data-size="22"></span><div><strong>WhatsApp</strong><a data-wa href="#agendar">Chamar agora</a></div></li>
+            <li><span data-icon="instagram" data-size="22"></span><div><strong>Instagram</strong><a data-ig href="#contato">@instagram</a></div></li>
+          </ul>
+        </div>
+        <div class="reveal" data-delay="100">
+          <div class="hours"><h3><span data-icon="clock" data-size="22"></span>Horário de funcionamento</h3><ul id="hours-list"></ul></div>
+          <div id="map" class="map"><div class="map__ph"><span data-icon="pin" data-size="28"></span><span>Espaço reservado para o Google Maps</span></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__in">
+      <span class="logo__txt">Vip Style<small>Barbearia</small></span>
+      <span>© <span data-year></span> Barbearia Vip Style. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+  <a class="wa-float" data-wa href="#agendar" aria-label="Falar pelo WhatsApp"><span data-icon="whatsapp" data-size="28"></span></a>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
